@@ -1,0 +1,76 @@
+Windows Registry Editor Version 5.00
+
+; Revertir cambios para deshabilitar la cola de prioridad en la red
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"DisableTaskOffload"=-
+
+; Revertir cambios para optimizar el rendimiento de la red
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"TcpAckFrequency"=-
+"TCPNoDelay"=-
+
+; Revertir cambios para optimizar la gestión de la CPU
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl]
+"Win32PrioritySeparation"=-
+
+; Revertir cambios para ajustar la planificación de interrupciones
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\InterruptManagement\Performance]
+"LatencyTolerance"=-
+
+; Revertir cambios para configurar el modo de juego
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
+"TdrDelay"=-
+
+; Revertir cambios para desactivar animaciones del sistema
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"MenuShowDelay"=-
+"ForegroundLockTimeout"=-
+
+; Revertir cambios para desactivar la optimización de entrega de actualizaciones
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization]
+"DODownloadMode"=-
+
+; Revertir cambios para optimizar el rendimiento del disco
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"DisablePagingExecutive"=-
+
+; Revertir cambios para aumentar el rendimiento del cache de DNS
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+"MaxCacheTtl"=-
+"MaxNegativeCacheTtl"=-
+
+; Revertir cambios para desactivar la compatibilidad de aplicaciones
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Compatibility Assistant]
+"DoNotShowUI"=-
+
+; Revertir cambios para desactivar la sincronización horaria en red
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient]
+"SpecialPollInterval"=-
+
+; Revertir cambios para optimizar el uso de la RAM
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"MinFreeSystemPageTableEntries"=-
+
+; Revertir cambios para desactivar el servicio de indexación de Windows
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WSearch]
+"Start"=-
+
+; Revertir cambios para ajustar el rendimiento del cortafuegos de Windows
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile]
+"EnableFirewall"=-
+
+; Revertir cambios para optimizar el rendimiento del adaptador de red
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"EnableTCPA"=-
+
+; Revertir cambios para reducir el tiempo de respuesta del teclado
+[HKEY_CURRENT_USER\Control Panel\Keyboard]
+"KeyboardDelay"=-
+
+; Revertir cambios para ajustar el buffer de video
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Video]
+"UseHardwareAcceleration"=-
+
+; Revertir cambios para desactivar el informe de errores de Windows
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=-
